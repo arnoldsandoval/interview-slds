@@ -48,8 +48,8 @@ From the start of the exercise I did a quick check for color contrast concerns, 
 
 I wanted to be sure that the tabular data in the `ShoppingList` was clearly represented in that way to screen readers. I moved away from using the HTML table tag because while it is tabular data, in different contexts it feels and reads more like a list. Another factor in the decision to not use the `table` tag was time, tables provide default styling which I felt would slow me down.
 
-I was also concerned about performance with ResizeObserver's polyfill and determined that it would be a fine solution to the container query problem. To validate this approach, I wrote a [quick prototype](https://codepen.io/arnoldsandoval/pen/VNBEjE) to see if it was a feasible solution. I am quite happy with how it turned out!
+I was also concerned about performance with ResizeObserver's polyfill but quickly determined that it would be a fine solution to the container query problem. To validate this approach, I wrote a [quick prototype](https://codepen.io/arnoldsandoval/pen/VNBEjE). I am quite happy with how it turned out!
 
-## Thanks
+## Thank you
 
 If you read this whole thing, thank you! 🌟
