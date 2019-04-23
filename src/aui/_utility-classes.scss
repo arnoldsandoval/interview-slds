@@ -1,0 +1,22 @@
+// Utilities
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Color Utilities
+.bg-brand {
+  background: $color-brand;
+}
+
+.flex {
+  display: flex;
+  &.justify-center {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin visually-hidden($visible: true) {
+  @if $visible == false {
+    position: static;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  } @else {
+    /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+    position: absolute;
+    height: 0.1rem;
+    width: 0.1rem;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}

@@ -1,0 +1,44 @@
+@import "aui/tokens";
+
+$input-select-border-color: #dddbda;
+
+.container-input-select {
+  position: relative;
+  display: inline-block;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.5rem solid transparent;
+    right: 0.8rem;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  &:before {
+    border-bottom: 0.5rem solid #3e3e3c;
+    top: 0.34rem;
+  }
+
+  &:after {
+    border-top: 0.5rem solid #3e3e3c;
+    bottom: 0.34rem;
+  }
+
+  .input-select {
+    font-size: 1.3rem;
+    line-height: 1.875rem;
+    display: inline-block;
+    padding: 0 2.4rem 0 0.8rem;
+    height: 3rem;
+    border-color: 0.1rem solid $input-select-border-color;
+    background-color: $color-white;
+    font-family: inherit;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+  }
+}

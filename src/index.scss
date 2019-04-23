@@ -1,0 +1,30 @@
+@import "aui/tokens";
+@import "aui/mixins";
+@import "aui/utility-classes";
+
+html {
+  font-size: $base-font-size;
+}
+body {
+  background: $page-background;
+  color: $page-text;
+  font-family: $base-font-family;
+  font-size: 1.2rem;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  // Spicy, super obvious style for all the focusable things!
+  *:focus {
+    outline: 0.33rem solid #e91e63;
+    outline-offset: 0.1rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 100.2rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}

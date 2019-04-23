@@ -1,0 +1,10 @@
+@import "aui/tokens";
+
+.card {
+  background: $color-white;
+  border: 0.1rem solid $color-grey;
+  box-sizing: border-box;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.24);
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+}

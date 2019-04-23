@@ -1,0 +1,58 @@
+@import "aui/tokens";
+@import "aui/mixins";
+
+.shopping-list-heading {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  margin: 1.7rem 0 3rem;
+
+  .icon {
+    margin-right: 1.2rem;
+  }
+}
+
+.shopping-list {
+  .shopping-list-empty {
+    text-align: center;
+
+    svg {
+      max-width: 100%;
+    }
+    h2 {
+      max-width: 25rem;
+      margin: 1rem auto;
+      font-weight: normal;
+    }
+  }
+
+  .table-shopping-list {
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  .product-list-summary {
+    border-top: 0.1rem solid $color-grey;
+
+    .subtotal {
+      font-size: 1.6rem;
+      font-weight: normal;
+    }
+  }
+
+  &.layout-wide {
+    display: flex;
+
+    .table-shopping-list {
+      border-right: 0.1rem solid $color-grey;
+      padding-right: 1.6rem;
+      max-width: 61.6rem;
+    }
+
+    .product-list-summary {
+      border-top: none;
+      padding-left: 2.4rem;
+    }
+  }
+}
